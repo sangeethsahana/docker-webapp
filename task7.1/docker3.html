@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Docker Web</title>
+<link rel="shortcut icon" href="ICON.ico">
+<body>
+
+<script src='docker.js' ></script>
+
+<link rel="stylesheet" href="test.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+
+<!-- Background & animion & navbar & title -->
+  <div class="container-fluid">
+<!-- Background animtion-->
+    <div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+	<div class="cube"></div>
+<div class="cube"></div>
+<div class="cube"></div>
+    </div>
+<!-- header -->
+   <header>
+     
+<!-- logo -->
+      <div class="logo"><span>DOCKERWEB</span></div>
+<!-- title & content -->
+<br/>
+<!-- <h1 style="color:  #EFEEF5;
+-webkit-text-stroke: 0.2px #e0c7c5;
+text-align:left;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 1px;
+text-shadow: 2px 5px #b573c7;">&nbsp; &nbsp; &nbsp; WELCOME TO DOCKER WEB</h1>
+<br/>
+
+<br/>
+-->
+
+      <section class="header-content">
+
+      <h1 style="text-align: left; color:#e0c7c5; font-size:250%;">&nbsp; &nbsp; &nbsp; &nbsp; WELCOME TO DOCKER WEB</h1><br/><br/>  
+        <p> Take a look at the command description and Copy Paste your preferred command to execute it :)</p>
+        <button onclick="location.href='#description';">NAVIGATE</button>
+
+      </section>
+<h2 style="color:#EFEEF5;
+text-align:center;
+font-size:30px;
+text-shadow: 2px 8px darkblue;">
+Enter your command : <input id = "in1" />
+</h2>
+<br/>
+<pre>
+<section class="op">
+<div id ="d1"> </div>
+<button onclick="lw()">SUBMIT</button>
+</pre>
+</section>
+<br/>
+<div class="description" id="description">
+<br/>
+
+<h2 style="color:#e0c7c5;
+
+text-align:center;
+
+font-size:250%;">
+COMMANDS AND DESCRIPTION</h2>
+<style>
+table{
+font-family: arial, sans-serif;
+padding: 35px;
+width: 100%
+}
+td, th{
+border: 1px solid #dddddd;
+text-align: center;
+padding: 8px;
+color: #591BC5;
+font-size: 17px;
+}
+
+tr:nth-child(even){
+background-color: #EFEEF5;
+}
+tr:nth-child(odd){
+background-color: #EFEEF5;
+}
+</style>
+<table>
+<tr>
+<td><u><b>systemctl start docker</b></u></td>
+<td> To start Docker Services</td>
+</tr>
+<tr>
+<td><u><b>systemctl enable docker</b></u></td>
+<td> To make Docker Services permanent</td>
+</tr>
+<tr>
+<td><u><b>docker images</b></u></td>
+<td> To see available Docker Images</td>
+</tr>
+<tr>
+<td><u><b>docker ps</b></u></td>
+<td> To check the running containers</td>
+</tr>
+<tr>
+<td><u><b>docker pull {image-name}:{tag-name}</b></u></td>
+<td> To pull your desired Docker Image</td>
+</tr>
+<tr>
+<td><u><b>docker run -dit --name {give-name} {image-name}:{tag-name}</b></u></td>
+<td> To launch a Docker Container</td>
+</tr>
+<tr>
+<td><u><b>docker rm -f {container-name}</b></u></td>
+<td> To remove a container</td>
+<tr>
+<td><u><b>docker start {container-name}</b></u></td>
+<td> To start a running container</td>
+<tr>
+<td><u><b>docker stop {container-name}</b></u></td>
+<td> To stop a running container</td>
+</tr>
+<tr>
+<td><u><b>docker exec {container-name} {command-name}</b></u></td>
+<td> To exceute cmd inside docker container</td>
+</tr>
+</tr>
+</tr>
+</table>
+
+
+</div>
+  </header>
+
+
